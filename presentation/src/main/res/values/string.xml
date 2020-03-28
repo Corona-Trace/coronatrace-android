@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="intro_page1_title">Help stop the spread of COVID-19</string>
+    <string name="intro_page1_subtitle">A single answer saves lives.</string>
+    <string name="intro_page1_description">CoronaTrace is an anonymous, real-time location-based contact tracer that alerts you about possible contact with someone who has tested positive for COVID-19 and helps stop the spread of the virus.</string>
+</resources>
