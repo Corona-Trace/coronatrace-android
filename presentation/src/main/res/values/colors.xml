@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="dark_grape">#2C3054</color>
-    <color name="ligth_grape">#E3CBE4</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="white">#ffffff</color>
+    <color name="darkGrape">#2C3054</color>
+    <color name="lightGrape">#E3CBE4</color>
+    <color name="primaryButton">#475DF3</color>
+    <color name="lightGrey">#80FFFFFF</color>
+    <color name="transparent">#00000000</color>
 </resources>

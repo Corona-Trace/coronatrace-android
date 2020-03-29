@@ -1,78 +1,49 @@
-<layout xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <data>
-
-    </data>
-
+    <!--  Can use barriers instead of margin left/right  -->
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_height="match_parent"
         android:layout_width="match_parent"
-        android:background="@color/dark_grape">
+        android:layout_height="match_parent"
+        android:background="@color/darkGrape">
 
-        <ImageView
-            android:id="@+id/iv_concentric_circle"
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/vp_intro"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@id/tabs"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout="@layout/fragment_page_intro" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_concentric_semicircle"
+            android:background="@color/transparent"
+            app:layout_constraintBottom_toTopOf="@id/btn_next"
             app:layout_constraintLeft_toLeftOf="parent"
-            android:layout_marginTop="45dp"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintRight_toRightOf="parent"
+            app:tabBackground="@drawable/tab_selector"
+            app:tabIndicatorHeight="0dp" />
 
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/tv_title"
-            style="@style/TextAppearance.MaterialComponents.Headline1"
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_next"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/intro_page1_title"
-            android:textColor="@color/ligth_grape"
-            android:textSize="38sp"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginRight="39dp"
-            app:layout_constraintTop_toBottomOf="@id/iv_concentric_circle"
-            app:layout_constraintLeft_toLeftOf="parent" />
-
-        <com.google.android.material.textview.MaterialTextView
-            style="@style/TextAppearance.MaterialComponents.Headline3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/intro_page1_subtitle"
-            android:textColor="@color/ligth_grape"
-            android:textSize="24sp"
-            android:layout_marginTop="16dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginRight="39dp"
-            app:layout_constraintTop_toBottomOf="@id/tv_title"
-            app:layout_constraintLeft_toLeftOf="parent" />
-
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/tv_subtitle"
-            style="@style/TextAppearance.MaterialComponents.Headline3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/intro_page1_subtitle"
-            android:textColor="@color/ligth_grape"
-            android:textSize="24sp"
-            android:layout_marginTop="16dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginRight="39dp"
-            app:layout_constraintTop_toBottomOf="@id/tv_title"
-            app:layout_constraintLeft_toLeftOf="parent" />
-
-        <com.google.android.material.textview.MaterialTextView
-            style="@style/TextAppearance.MaterialComponents.Headline3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/intro_page1_description"
-            android:textColor="@color/ligth_grape"
-            android:textSize="21sp"
-            android:layout_marginTop="16dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginRight="39dp"
-            app:layout_constraintTop_toBottomOf="@id/tv_subtitle"
-            app:layout_constraintLeft_toLeftOf="parent" />
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="54dp"
+            android:background="@color/primaryButton"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:text="@string/button_see_how_it_works_default"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:background="@color/colorPrimary" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

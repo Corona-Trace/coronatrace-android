@@ -3,4 +3,17 @@
     <string name="intro_page1_title">Help stop the spread of COVID-19</string>
     <string name="intro_page1_subtitle">A single answer saves lives.</string>
     <string name="intro_page1_description">CoronaTrace is an anonymous, real-time location-based contact tracer that alerts you about possible contact with someone who has tested positive for COVID-19 and helps stop the spread of the virus.</string>
+
+    <string name="intro_page2_subtitle">Anonymous Check-in</string>
+    <string name="intro_page2_description">Help prevent the spread of COVID-19 by sharing your status and location anonymously.</string>
+
+    <string name="intro_page3_subtitle">Get Notified</string>
+    <string name="intro_page3_description">Get notified If you cross paths with someone who has anonymously reported themselves as positive for COVID-19 and get peace of mind when you don’t.</string>
+
+    <string name="intro_page4_subtitle">Clear &amp; Meaningful Status</string>
+    <string name="intro_page4_description">Anonymous self-reporting is based on clear guidelines with actionable next steps for people that might need help.</string>
+
+    <string name="button_see_how_it_works_default">See How it Works</string>
+    <string name="button_continue">Continue</string>
+    <string name="button_get_started">Get Started</string>
 </resources>
